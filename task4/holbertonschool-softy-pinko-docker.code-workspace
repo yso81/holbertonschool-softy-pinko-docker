@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "holbertonschool-web_react",
+			"path": "../../holbertonschool-web_react"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "holbertonschool-web_react"
+	}
+}

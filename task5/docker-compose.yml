@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  back-end:
+    image: softy-pinko-back-end:task5
+    build:
+      context: ./task4-back-end # or the specific folder name from your previous task
+      dockerfile: Dockerfile
+    # No ports mapped to host - only accessible internally
+
+  front-end:
+    image: softy-pinko-front-end:task5
+    build:
+      context: ./task4-front-end # or the specific folder name from your previous task
+      dockerfile: Dockerfile
+    # No ports mapped to host - only accessible internally
+
+  proxy:
+    image: softy-pinko-proxy:task5
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - back-end
+      - front-end
+      
