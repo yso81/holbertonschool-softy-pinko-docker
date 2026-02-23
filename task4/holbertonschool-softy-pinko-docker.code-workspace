@@ -6,6 +6,10 @@
 		{
 			"name": "holbertonschool-web_react",
 			"path": "../../holbertonschool-web_react"
+		},
+		{
+			"name": "holbertonschool-network",
+			"path": "../../holbertonschool-network"
 		}
 	],
 	"settings": {
